@@ -31,7 +31,16 @@
 .feynman__subtitle,
 .feynman__link,
 .kaufman,
-.kaufman__triangle {
+.kaufman__triangle,
+.logo,
+.footer,
+.footer__columns,
+.footer__column,
+.footer__author,
+.footer__column-heading,
+.footer__column-links,
+.footer__column-link,
+.footer__social-icon {
   border: 1px solid red;
 }
 
@@ -47,6 +56,19 @@
   display: flex;
   background-color: #f2f2f2;
   margin-bottom: 100px;
+}
+
+.logo {
+  width: 183px;
+  height: 32px;
+  z-index: 3;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  background-image: url(../images/logo_place_header.svg);
 }
 
 .header__title {
@@ -270,3 +292,58 @@
 }
 
 /*Footer block styles*/
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 60px 0 40px 0;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer__column:first-child {
+  flex-basis: 711px;
+  justify-content: space-between;
+}
+
+.footer__author {
+  margin: 18px 0;
+  padding: 0;
+  font: normal 18px/25px "Helvetica Neue", Arial, sans-serif;
+}
+.footer__column-heading {
+  margin: 0;
+  padding: 0;
+  font: bold 18px/30px "Helvetica Neue", Arial, sans-serif;
+}
+.footer__column-links {
+  list-style: none;
+  margin: 20px 0 16px 0;
+  padding: 0;
+  font: normal 18px/30px "Helvetica Neue", Arial, sans-serif;
+}
+
+.footer__column-link > a {
+  text-decoration: none;
+  color: white;
+}
+.footer__social-icon {
+  margin-right: 10px;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  height: 35px;
+}
