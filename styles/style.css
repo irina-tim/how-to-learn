@@ -1,47 +1,8 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-.header,
-.header__title,
-.header__subtitle,
-.header__main-illustration,
-.header__square-pic,
-.description,
-.two-columns,
-.two-columns__brief,
-.two-columns__main-text,
-.two-columns__paragraph,
-.digits,
-.section-title,
-.section-subtitle,
-.table,
-.table__cell,
-.table__heading,
-.table__text,
-.feynman,
-.feynman__title,
-.feynman__subtitle,
-.feynman__link,
-.kaufman,
-.kaufman__triangle,
-.logo,
-.footer,
-.footer__columns,
-.footer__column,
-.footer__author,
-.footer__column-heading,
-.footer__column-links,
-.footer__column-link,
-.footer__social-icon {
-  border: 1px solid red;
 }
 
 /*Header block styles*/
@@ -137,6 +98,12 @@
   padding: 0;
   width: 175px;
   font: normal 18px/1.2 "Helvetica Neue", Arial, sans-serif;
+}
+
+.two-columns__brief > a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
   color: #2f80ed;
 }
 
@@ -221,6 +188,7 @@
 }
 
 /*Feynman block styles*/
+
 .feynman {
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
