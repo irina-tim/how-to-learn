@@ -18,7 +18,14 @@
 .two-columns,
 .two-columns__brief,
 .two-columns__main-text,
-.two-columns__paragraph {
+.two-columns__paragraph,
+.digits,
+.section-title,
+.section-subtitle,
+.table,
+.table__cell,
+.table__heading,
+.table__text {
   border: 1px solid red;
 }
 
@@ -121,6 +128,59 @@
 
 .two-columns__span-accent {
   font: bold 24px/34px "Helvetica Neue", Arial, sans-serif;
+}
+
+/*Digits block styles*/
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  text-align: center;
+  font: bold 60px/1.15 "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  margin: 0;
+  padding: 0;
+  font: normal 24px/34px "Helvetica Neue", Arial, sans-serif;
+  width: 60%;
+  text-align: center;
+}
+
+.table {
+  margin: 0;
+  padding: 0;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.table__cell {
+  list-style: none;
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  margin: 0;
+  padding: 0;
+  font: bold 24px/1.15 "Helvetica Neue", Arial, sans-serif;
+}
+
+.table__text {
+  margin: 0;
+  padding: 0;
+  font: normal 18px/1.2 "Helvetica Neue", Arial, sans-serif;
+  margin-top: 20px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
