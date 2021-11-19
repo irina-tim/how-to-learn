@@ -13,9 +13,16 @@
 .header__title,
 .header__subtitle,
 .header__main-illustration,
-.header__square-pic {
+.header__square-pic,
+.description,
+.two-columns,
+.two-columns__brief,
+.two-columns__main-text,
+.two-columns__paragraph {
   border: 1px solid red;
 }
+
+/*Header block styles*/
 
 .header {
   height: 100vh;
@@ -26,6 +33,7 @@
   padding: 0;
   display: flex;
   background-color: #f2f2f2;
+  margin-bottom: 100px;
 }
 
 .header__title {
@@ -48,6 +56,8 @@
 }
 
 .header__link {
+  text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -68,6 +78,49 @@
   right: 0;
   background-color: #2f80ed;
   z-index: 0;
+}
+
+/*Description block styles*/
+.description {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.two-columns {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  margin: 0;
+  padding: 0;
+  width: 175px;
+  font: normal 18px/1.2 "Helvetica Neue", Arial, sans-serif;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  font: normal 24px/34px "Helvetica Neue", Arial, sans-serif;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin: 0;
+}
+
+.two-columns__span-accent {
+  font: bold 24px/34px "Helvetica Neue", Arial, sans-serif;
 }
 
 /* и элемента с модификатором вида ключ-значение */
