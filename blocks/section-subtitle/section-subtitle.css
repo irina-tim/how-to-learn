@@ -1,0 +1,8 @@
+.section-subtitle {
+  margin: 0;
+  padding: 0;
+  font: normal 24px/34px "Helvetica Neue", Arial, sans-serif;
+  width: 60%;
+  text-align: center;
+  z-index: 2;
+}

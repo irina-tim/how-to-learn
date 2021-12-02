@@ -1,0 +1,9 @@
+.header__title {
+  margin: 0;
+  padding: 0;
+  width: 730px;
+  font: bold 102px/96px "Helvetica Neue", Arial, sans-serif;
+  align-self: center;
+  margin-left: 64px;
+  z-index: 2;
+}
